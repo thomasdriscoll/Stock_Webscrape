@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <header lang='en'>
+    <title>My Stocks</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- JQuery links -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src = '/static/compute.js'></script>
+    <!-- Font links -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <!-- Personal style sheet -->
+    <link rel='stylesheet prefetch' type = 'text/css' href='/static/style.css'/>
+  </header>
+  <body>
+    <h1>Stock Calculator</h1>
+    <form class="stock_info" action="/get_stock" method=post role="form" id='my_inputs'>
+      Stock page: <input type="text" id = "stock">
+      <input type="submit" id='submitBtn' >
+    </form>
+    <textarea rows = '20' cols = '100' id = 'output'></textarea>
+  </body>
+</html>
